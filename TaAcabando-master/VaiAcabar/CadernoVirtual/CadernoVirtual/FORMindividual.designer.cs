@@ -34,22 +34,33 @@
             this.BTNsairUsuario = new System.Windows.Forms.Button();
             this.tituloApresentacao = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cBoxPainelBusca1 = new System.Windows.Forms.ComboBox();
-            this.cBoxPainelBusca3 = new System.Windows.Forms.ComboBox();
-            this.cBoxPainelBusca2 = new System.Windows.Forms.ComboBox();
-            this.BTNbuscarConteudo = new System.Windows.Forms.Button();
-            this.lblBuscarConteudo = new System.Windows.Forms.Label();
-            this.lblCadernos = new System.Windows.Forms.Label();
-            this.BTNcriarCaderno = new System.Windows.Forms.Button();
-            this.BTNeditarCaderno = new System.Windows.Forms.Button();
-            this.lblTurma = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblTurma = new System.Windows.Forms.Label();
+            this.BTNeditarCaderno = new System.Windows.Forms.Button();
+            this.BTNcriarCaderno = new System.Windows.Forms.Button();
+            this.lblCadernos = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblBuscarConteudo = new System.Windows.Forms.Label();
+            this.BTNbuscarConteudo = new System.Windows.Forms.Button();
+            this.cBoxPainelBusca2 = new System.Windows.Forms.ComboBox();
+            this.cBoxPainelBusca3 = new System.Windows.Forms.ComboBox();
+            this.cBoxPainelBusca1 = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TXTconfirmarsenhaEditar = new System.Windows.Forms.TextBox();
+            this.TXTsenhaEditar = new System.Windows.Forms.TextBox();
+            this.TXTmatriculaEditar = new System.Windows.Forms.TextBox();
+            this.TXTusuarioEditar = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BTNconfirmarEdicao = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // BTNeditarUsuario
@@ -131,6 +142,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.lblSenha);
@@ -146,6 +158,109 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(599, 879);
             this.panel1.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(180, 749);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(188, 24);
+            this.textBox1.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(180, 701);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(188, 24);
+            this.textBox2.TabIndex = 13;
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.lblSenha.Location = new System.Drawing.Point(72, 746);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(97, 31);
+            this.lblSenha.TabIndex = 13;
+            this.lblSenha.Text = "Senha";
+            this.lblSenha.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblTurma
+            // 
+            this.lblTurma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTurma.AutoSize = true;
+            this.lblTurma.BackColor = System.Drawing.Color.Transparent;
+            this.lblTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.lblTurma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.lblTurma.Location = new System.Drawing.Point(72, 696);
+            this.lblTurma.Name = "lblTurma";
+            this.lblTurma.Size = new System.Drawing.Size(97, 31);
+            this.lblTurma.TabIndex = 12;
+            this.lblTurma.Text = "Turma";
+            this.lblTurma.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTurma.Click += new System.EventHandler(this.lblTurma_Click);
+            // 
+            // BTNeditarCaderno
+            // 
+            this.BTNeditarCaderno.BackColor = System.Drawing.Color.Transparent;
+            this.BTNeditarCaderno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNeditarCaderno.BackgroundImage")));
+            this.BTNeditarCaderno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTNeditarCaderno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNeditarCaderno.FlatAppearance.BorderSize = 0;
+            this.BTNeditarCaderno.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.BTNeditarCaderno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BTNeditarCaderno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BTNeditarCaderno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNeditarCaderno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.BTNeditarCaderno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.BTNeditarCaderno.Location = new System.Drawing.Point(406, 790);
+            this.BTNeditarCaderno.Name = "BTNeditarCaderno";
+            this.BTNeditarCaderno.Size = new System.Drawing.Size(190, 38);
+            this.BTNeditarCaderno.TabIndex = 11;
+            this.BTNeditarCaderno.Text = "Editar";
+            this.BTNeditarCaderno.UseVisualStyleBackColor = false;
+            // 
+            // BTNcriarCaderno
+            // 
+            this.BTNcriarCaderno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.BTNcriarCaderno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNcriarCaderno.BackgroundImage")));
+            this.BTNcriarCaderno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTNcriarCaderno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNcriarCaderno.FlatAppearance.BorderSize = 0;
+            this.BTNcriarCaderno.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.BTNcriarCaderno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BTNcriarCaderno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BTNcriarCaderno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNcriarCaderno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.BTNcriarCaderno.ForeColor = System.Drawing.SystemColors.Info;
+            this.BTNcriarCaderno.Location = new System.Drawing.Point(420, 608);
+            this.BTNcriarCaderno.Name = "BTNcriarCaderno";
+            this.BTNcriarCaderno.Size = new System.Drawing.Size(92, 36);
+            this.BTNcriarCaderno.TabIndex = 10;
+            this.BTNcriarCaderno.Text = "Criar";
+            this.BTNcriarCaderno.UseVisualStyleBackColor = false;
+            this.BTNcriarCaderno.Click += new System.EventHandler(this.BTNcriarCaderno_Click);
+            // 
+            // lblCadernos
+            // 
+            this.lblCadernos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCadernos.AutoSize = true;
+            this.lblCadernos.BackColor = System.Drawing.Color.Transparent;
+            this.lblCadernos.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
+            this.lblCadernos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.lblCadernos.Location = new System.Drawing.Point(197, 596);
+            this.lblCadernos.Name = "lblCadernos";
+            this.lblCadernos.Size = new System.Drawing.Size(217, 51);
+            this.lblCadernos.TabIndex = 9;
+            this.lblCadernos.Text = "Cadernos";
+            this.lblCadernos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtPesquisa
             // 
@@ -171,29 +286,21 @@
             this.panel2.Size = new System.Drawing.Size(1101, 105);
             this.panel2.TabIndex = 0;
             // 
-            // cBoxPainelBusca1
+            // lblBuscarConteudo
             // 
-            this.cBoxPainelBusca1.FormattingEnabled = true;
-            this.cBoxPainelBusca1.Location = new System.Drawing.Point(37, 64);
-            this.cBoxPainelBusca1.Name = "cBoxPainelBusca1";
-            this.cBoxPainelBusca1.Size = new System.Drawing.Size(121, 21);
-            this.cBoxPainelBusca1.TabIndex = 0;
-            // 
-            // cBoxPainelBusca3
-            // 
-            this.cBoxPainelBusca3.FormattingEnabled = true;
-            this.cBoxPainelBusca3.Location = new System.Drawing.Point(467, 64);
-            this.cBoxPainelBusca3.Name = "cBoxPainelBusca3";
-            this.cBoxPainelBusca3.Size = new System.Drawing.Size(121, 21);
-            this.cBoxPainelBusca3.TabIndex = 1;
-            // 
-            // cBoxPainelBusca2
-            // 
-            this.cBoxPainelBusca2.FormattingEnabled = true;
-            this.cBoxPainelBusca2.Location = new System.Drawing.Point(253, 64);
-            this.cBoxPainelBusca2.Name = "cBoxPainelBusca2";
-            this.cBoxPainelBusca2.Size = new System.Drawing.Size(121, 21);
-            this.cBoxPainelBusca2.TabIndex = 2;
+            this.lblBuscarConteudo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBuscarConteudo.AutoSize = true;
+            this.lblBuscarConteudo.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscarConteudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.lblBuscarConteudo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.lblBuscarConteudo.Location = new System.Drawing.Point(659, 17);
+            this.lblBuscarConteudo.Name = "lblBuscarConteudo";
+            this.lblBuscarConteudo.Size = new System.Drawing.Size(74, 24);
+            this.lblBuscarConteudo.TabIndex = 9;
+            this.lblBuscarConteudo.Text = "Buscar";
+            this.lblBuscarConteudo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblBuscarConteudo.Click += new System.EventHandler(this.label1_Click);
             // 
             // BTNbuscarConteudo
             // 
@@ -216,124 +323,152 @@
             this.BTNbuscarConteudo.UseVisualStyleBackColor = false;
             this.BTNbuscarConteudo.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblBuscarConteudo
+            // cBoxPainelBusca2
             // 
-            this.lblBuscarConteudo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBuscarConteudo.AutoSize = true;
-            this.lblBuscarConteudo.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuscarConteudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblBuscarConteudo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblBuscarConteudo.Location = new System.Drawing.Point(659, 17);
-            this.lblBuscarConteudo.Name = "lblBuscarConteudo";
-            this.lblBuscarConteudo.Size = new System.Drawing.Size(74, 24);
-            this.lblBuscarConteudo.TabIndex = 9;
-            this.lblBuscarConteudo.Text = "Buscar";
-            this.lblBuscarConteudo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblBuscarConteudo.Click += new System.EventHandler(this.label1_Click);
+            this.cBoxPainelBusca2.FormattingEnabled = true;
+            this.cBoxPainelBusca2.Location = new System.Drawing.Point(253, 64);
+            this.cBoxPainelBusca2.Name = "cBoxPainelBusca2";
+            this.cBoxPainelBusca2.Size = new System.Drawing.Size(121, 21);
+            this.cBoxPainelBusca2.TabIndex = 2;
             // 
-            // lblCadernos
+            // cBoxPainelBusca3
             // 
-            this.lblCadernos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCadernos.AutoSize = true;
-            this.lblCadernos.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadernos.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
-            this.lblCadernos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblCadernos.Location = new System.Drawing.Point(197, 596);
-            this.lblCadernos.Name = "lblCadernos";
-            this.lblCadernos.Size = new System.Drawing.Size(217, 51);
-            this.lblCadernos.TabIndex = 9;
-            this.lblCadernos.Text = "Cadernos";
-            this.lblCadernos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cBoxPainelBusca3.FormattingEnabled = true;
+            this.cBoxPainelBusca3.Location = new System.Drawing.Point(467, 64);
+            this.cBoxPainelBusca3.Name = "cBoxPainelBusca3";
+            this.cBoxPainelBusca3.Size = new System.Drawing.Size(121, 21);
+            this.cBoxPainelBusca3.TabIndex = 1;
             // 
-            // BTNcriarCaderno
+            // cBoxPainelBusca1
             // 
-            this.BTNcriarCaderno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNcriarCaderno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNcriarCaderno.BackgroundImage")));
-            this.BTNcriarCaderno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BTNcriarCaderno.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNcriarCaderno.FlatAppearance.BorderSize = 0;
-            this.BTNcriarCaderno.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.BTNcriarCaderno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BTNcriarCaderno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BTNcriarCaderno.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNcriarCaderno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.BTNcriarCaderno.ForeColor = System.Drawing.SystemColors.Info;
-            this.BTNcriarCaderno.Location = new System.Drawing.Point(420, 608);
-            this.BTNcriarCaderno.Name = "BTNcriarCaderno";
-            this.BTNcriarCaderno.Size = new System.Drawing.Size(92, 36);
-            this.BTNcriarCaderno.TabIndex = 10;
-            this.BTNcriarCaderno.Text = "Criar";
-            this.BTNcriarCaderno.UseVisualStyleBackColor = false;
-            this.BTNcriarCaderno.Click += new System.EventHandler(this.BTNcriarCaderno_Click);
+            this.cBoxPainelBusca1.FormattingEnabled = true;
+            this.cBoxPainelBusca1.Location = new System.Drawing.Point(37, 64);
+            this.cBoxPainelBusca1.Name = "cBoxPainelBusca1";
+            this.cBoxPainelBusca1.Size = new System.Drawing.Size(121, 21);
+            this.cBoxPainelBusca1.TabIndex = 0;
             // 
-            // BTNeditarCaderno
+            // panel3
             // 
-            this.BTNeditarCaderno.BackColor = System.Drawing.Color.Transparent;
-            this.BTNeditarCaderno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNeditarCaderno.BackgroundImage")));
-            this.BTNeditarCaderno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BTNeditarCaderno.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNeditarCaderno.FlatAppearance.BorderSize = 0;
-            this.BTNeditarCaderno.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.BTNeditarCaderno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BTNeditarCaderno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BTNeditarCaderno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNeditarCaderno.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.BTNeditarCaderno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNeditarCaderno.Location = new System.Drawing.Point(406, 790);
-            this.BTNeditarCaderno.Name = "BTNeditarCaderno";
-            this.BTNeditarCaderno.Size = new System.Drawing.Size(190, 38);
-            this.BTNeditarCaderno.TabIndex = 11;
-            this.BTNeditarCaderno.Text = "Editar";
-            this.BTNeditarCaderno.UseVisualStyleBackColor = false;
+            this.panel3.Controls.Add(this.BTNconfirmarEdicao);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.TXTconfirmarsenhaEditar);
+            this.panel3.Controls.Add(this.TXTsenhaEditar);
+            this.panel3.Controls.Add(this.TXTmatriculaEditar);
+            this.panel3.Controls.Add(this.TXTusuarioEditar);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(78, 253);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(434, 225);
+            this.panel3.TabIndex = 11;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // lblTurma
+            // label6
             // 
-            this.lblTurma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTurma.AutoSize = true;
-            this.lblTurma.BackColor = System.Drawing.Color.Transparent;
-            this.lblTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.lblTurma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblTurma.Location = new System.Drawing.Point(72, 696);
-            this.lblTurma.Name = "lblTurma";
-            this.lblTurma.Size = new System.Drawing.Size(97, 31);
-            this.lblTurma.TabIndex = 12;
-            this.lblTurma.Text = "Turma";
-            this.lblTurma.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTurma.Click += new System.EventHandler(this.lblTurma_Click);
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.label6.Location = new System.Drawing.Point(50, 128);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(149, 18);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Confirmar Senha";
             // 
-            // lblSenha
+            // TXTconfirmarsenhaEditar
             // 
-            this.lblSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblSenha.Location = new System.Drawing.Point(72, 746);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(97, 31);
-            this.lblSenha.TabIndex = 13;
-            this.lblSenha.Text = "Senha";
-            this.lblSenha.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TXTconfirmarsenhaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TXTconfirmarsenhaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTconfirmarsenhaEditar.Location = new System.Drawing.Point(205, 124);
+            this.TXTconfirmarsenhaEditar.Name = "TXTconfirmarsenhaEditar";
+            this.TXTconfirmarsenhaEditar.PasswordChar = '*';
+            this.TXTconfirmarsenhaEditar.Size = new System.Drawing.Size(170, 22);
+            this.TXTconfirmarsenhaEditar.TabIndex = 22;
             // 
-            // textBox1
+            // TXTsenhaEditar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 749);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 24);
-            this.textBox1.TabIndex = 12;
+            this.TXTsenhaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TXTsenhaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTsenhaEditar.Location = new System.Drawing.Point(205, 96);
+            this.TXTsenhaEditar.Name = "TXTsenhaEditar";
+            this.TXTsenhaEditar.PasswordChar = '*';
+            this.TXTsenhaEditar.Size = new System.Drawing.Size(170, 22);
+            this.TXTsenhaEditar.TabIndex = 21;
             // 
-            // textBox2
+            // TXTmatriculaEditar
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(180, 701);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 24);
-            this.textBox2.TabIndex = 13;
+            this.TXTmatriculaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TXTmatriculaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTmatriculaEditar.Location = new System.Drawing.Point(205, 66);
+            this.TXTmatriculaEditar.Name = "TXTmatriculaEditar";
+            this.TXTmatriculaEditar.Size = new System.Drawing.Size(118, 22);
+            this.TXTmatriculaEditar.TabIndex = 20;
+            // 
+            // TXTusuarioEditar
+            // 
+            this.TXTusuarioEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TXTusuarioEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TXTusuarioEditar.Location = new System.Drawing.Point(205, 38);
+            this.TXTusuarioEditar.Name = "TXTusuarioEditar";
+            this.TXTusuarioEditar.Size = new System.Drawing.Size(170, 22);
+            this.TXTusuarioEditar.TabIndex = 19;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.label4.Location = new System.Drawing.Point(140, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 18);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Senha";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.label3.Location = new System.Drawing.Point(109, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 18);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Matrícula";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.label1.Location = new System.Drawing.Point(125, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 18);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Usuário";
+            // 
+            // BTNconfirmarEdicao
+            // 
+            this.BTNconfirmarEdicao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.BTNconfirmarEdicao.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNconfirmarEdicao.BackgroundImage")));
+            this.BTNconfirmarEdicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTNconfirmarEdicao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNconfirmarEdicao.FlatAppearance.BorderSize = 0;
+            this.BTNconfirmarEdicao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.BTNconfirmarEdicao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BTNconfirmarEdicao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BTNconfirmarEdicao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNconfirmarEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.BTNconfirmarEdicao.ForeColor = System.Drawing.SystemColors.Info;
+            this.BTNconfirmarEdicao.Location = new System.Drawing.Point(122, 176);
+            this.BTNconfirmarEdicao.Name = "BTNconfirmarEdicao";
+            this.BTNconfirmarEdicao.Size = new System.Drawing.Size(168, 35);
+            this.BTNconfirmarEdicao.TabIndex = 24;
+            this.BTNconfirmarEdicao.Text = "Confirmar Edição";
+            this.BTNconfirmarEdicao.UseVisualStyleBackColor = false;
             // 
             // FORMindividual
             // 
@@ -353,6 +488,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +516,15 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button BTNconfirmarEdicao;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox TXTconfirmarsenhaEditar;
+        private System.Windows.Forms.TextBox TXTsenhaEditar;
+        private System.Windows.Forms.TextBox TXTmatriculaEditar;
+        private System.Windows.Forms.TextBox TXTusuarioEditar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }
