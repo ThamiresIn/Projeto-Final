@@ -17,8 +17,8 @@ namespace CadernoVirtual
         {
             InitializeComponent();
         }
-
-        public string login;
+        
+        public string login;        
 
         public bool VerificarUsuario (string usuario)
         {
@@ -164,9 +164,8 @@ namespace CadernoVirtual
                 if (dr.Read())
                 {
                     login = TXTusuarioEntrar.Text;
-                    FORMindividual formindividual = new FORMindividual(login);
-                    this.Visible = false;
-                    formindividual.ShowDialog();
+                    FORMindividual formindividual = new FORMindividual(login);                    
+                    formindividual.Show();                  
                 }
                 else
                 {

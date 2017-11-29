@@ -52,7 +52,7 @@
     <Compile Include="FORMcriarCaderno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FORMcriarCaderno.Designer.cs">
+    <Compile Include="FORMcriarCaderno.designer.cs">
       <DependentUpon>FORMcriarCaderno.cs</DependentUpon>
     </Compile>
     <Compile Include="FORMindividual.cs">

@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FORMindividual));
             this.BTNeditarUsuario = new System.Windows.Forms.Button();
             this.BTNexcluirUsuario = new System.Windows.Forms.Button();
-            this.BTNsairUsuario = new System.Windows.Forms.Button();
             this.tituloApresentacao = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BTNdesconectar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -48,19 +48,10 @@
             this.cBoxPainelBusca2 = new System.Windows.Forms.ComboBox();
             this.cBoxPainelBusca3 = new System.Windows.Forms.ComboBox();
             this.cBoxPainelBusca1 = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TXTconfirmarsenhaEditar = new System.Windows.Forms.TextBox();
-            this.TXTsenhaEditar = new System.Windows.Forms.TextBox();
-            this.TXTmatriculaEditar = new System.Windows.Forms.TextBox();
-            this.TXTusuarioEditar = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BTNconfirmarEdicao = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BTNeditarUsuario
@@ -76,7 +67,7 @@
             this.BTNeditarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNeditarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNeditarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNeditarUsuario.Location = new System.Drawing.Point(68, 93);
+            this.BTNeditarUsuario.Location = new System.Drawing.Point(98, 190);
             this.BTNeditarUsuario.Name = "BTNeditarUsuario";
             this.BTNeditarUsuario.Size = new System.Drawing.Size(190, 38);
             this.BTNeditarUsuario.TabIndex = 5;
@@ -96,53 +87,30 @@
             this.BTNexcluirUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNexcluirUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNexcluirUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNexcluirUsuario.Location = new System.Drawing.Point(68, 142);
+            this.BTNexcluirUsuario.Location = new System.Drawing.Point(98, 244);
             this.BTNexcluirUsuario.Name = "BTNexcluirUsuario";
-            this.BTNexcluirUsuario.Size = new System.Drawing.Size(190, 38);
+            this.BTNexcluirUsuario.Size = new System.Drawing.Size(190, 36);
             this.BTNexcluirUsuario.TabIndex = 6;
             this.BTNexcluirUsuario.Text = "Excluir Usuário";
             this.BTNexcluirUsuario.UseVisualStyleBackColor = false;
             // 
-            // BTNsairUsuario
-            // 
-            this.BTNsairUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.BTNsairUsuario.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNsairUsuario.BackgroundImage")));
-            this.BTNsairUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BTNsairUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNsairUsuario.FlatAppearance.BorderSize = 0;
-            this.BTNsairUsuario.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.BTNsairUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BTNsairUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BTNsairUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNsairUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNsairUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNsairUsuario.Location = new System.Drawing.Point(68, 190);
-            this.BTNsairUsuario.Name = "BTNsairUsuario";
-            this.BTNsairUsuario.Size = new System.Drawing.Size(190, 38);
-            this.BTNsairUsuario.TabIndex = 7;
-            this.BTNsairUsuario.Text = "Desconectar";
-            this.BTNsairUsuario.UseVisualStyleBackColor = false;
-            this.BTNsairUsuario.Click += new System.EventHandler(this.BTNsairusuario_Click);
-            // 
             // tituloApresentacao
             // 
-            this.tituloApresentacao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloApresentacao.AutoSize = true;
             this.tituloApresentacao.BackColor = System.Drawing.Color.Transparent;
-            this.tituloApresentacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
+            this.tituloApresentacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
             this.tituloApresentacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.tituloApresentacao.Location = new System.Drawing.Point(69, 34);
+            this.tituloApresentacao.Location = new System.Drawing.Point(69, 32);
             this.tituloApresentacao.Name = "tituloApresentacao";
-            this.tituloApresentacao.Size = new System.Drawing.Size(255, 51);
-            this.tituloApresentacao.TabIndex = 8;
-            this.tituloApresentacao.Text = "Bem Vindo!";
-            this.tituloApresentacao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tituloApresentacao.Size = new System.Drawing.Size(527, 51);
+            this.tituloApresentacao.TabIndex = 14;
+            this.tituloApresentacao.Text = "Bem vindo";
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.tituloApresentacao);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.BTNdesconectar);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.lblSenha);
@@ -150,14 +118,33 @@
             this.panel1.Controls.Add(this.BTNeditarCaderno);
             this.panel1.Controls.Add(this.BTNcriarCaderno);
             this.panel1.Controls.Add(this.lblCadernos);
-            this.panel1.Controls.Add(this.tituloApresentacao);
-            this.panel1.Controls.Add(this.BTNsairUsuario);
             this.panel1.Controls.Add(this.BTNeditarUsuario);
             this.panel1.Controls.Add(this.BTNexcluirUsuario);
             this.panel1.Location = new System.Drawing.Point(-4, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(599, 879);
             this.panel1.TabIndex = 10;
+            // 
+            // BTNdesconectar
+            // 
+            this.BTNdesconectar.BackColor = System.Drawing.Color.Transparent;
+            this.BTNdesconectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNdesconectar.BackgroundImage")));
+            this.BTNdesconectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTNdesconectar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNdesconectar.FlatAppearance.BorderSize = 0;
+            this.BTNdesconectar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.BTNdesconectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BTNdesconectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BTNdesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNdesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNdesconectar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
+            this.BTNdesconectar.Location = new System.Drawing.Point(98, 292);
+            this.BTNdesconectar.Name = "BTNdesconectar";
+            this.BTNdesconectar.Size = new System.Drawing.Size(190, 38);
+            this.BTNdesconectar.TabIndex = 15;
+            this.BTNdesconectar.Text = "Desconectar";
+            this.BTNdesconectar.UseVisualStyleBackColor = false;
+            this.BTNdesconectar.Click += new System.EventHandler(this.BTNdesconectar_Click);
             // 
             // textBox1
             // 
@@ -347,128 +334,17 @@
             this.cBoxPainelBusca1.Size = new System.Drawing.Size(121, 21);
             this.cBoxPainelBusca1.TabIndex = 0;
             // 
-            // panel3
+            // pictureBox1
             // 
-            this.panel3.Controls.Add(this.BTNconfirmarEdicao);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.TXTconfirmarsenhaEditar);
-            this.panel3.Controls.Add(this.TXTsenhaEditar);
-            this.panel3.Controls.Add(this.TXTmatriculaEditar);
-            this.panel3.Controls.Add(this.TXTusuarioEditar);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(78, 253);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 225);
-            this.panel3.TabIndex = 11;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.label6.Location = new System.Drawing.Point(50, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 18);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Confirmar Senha";
-            // 
-            // TXTconfirmarsenhaEditar
-            // 
-            this.TXTconfirmarsenhaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TXTconfirmarsenhaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTconfirmarsenhaEditar.Location = new System.Drawing.Point(205, 124);
-            this.TXTconfirmarsenhaEditar.Name = "TXTconfirmarsenhaEditar";
-            this.TXTconfirmarsenhaEditar.PasswordChar = '*';
-            this.TXTconfirmarsenhaEditar.Size = new System.Drawing.Size(170, 22);
-            this.TXTconfirmarsenhaEditar.TabIndex = 22;
-            // 
-            // TXTsenhaEditar
-            // 
-            this.TXTsenhaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TXTsenhaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTsenhaEditar.Location = new System.Drawing.Point(205, 96);
-            this.TXTsenhaEditar.Name = "TXTsenhaEditar";
-            this.TXTsenhaEditar.PasswordChar = '*';
-            this.TXTsenhaEditar.Size = new System.Drawing.Size(170, 22);
-            this.TXTsenhaEditar.TabIndex = 21;
-            // 
-            // TXTmatriculaEditar
-            // 
-            this.TXTmatriculaEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TXTmatriculaEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTmatriculaEditar.Location = new System.Drawing.Point(205, 66);
-            this.TXTmatriculaEditar.Name = "TXTmatriculaEditar";
-            this.TXTmatriculaEditar.Size = new System.Drawing.Size(118, 22);
-            this.TXTmatriculaEditar.TabIndex = 20;
-            // 
-            // TXTusuarioEditar
-            // 
-            this.TXTusuarioEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TXTusuarioEditar.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTusuarioEditar.Location = new System.Drawing.Point(205, 38);
-            this.TXTusuarioEditar.Name = "TXTusuarioEditar";
-            this.TXTusuarioEditar.Size = new System.Drawing.Size(170, 22);
-            this.TXTusuarioEditar.TabIndex = 19;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.label4.Location = new System.Drawing.Point(140, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Senha";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.label3.Location = new System.Drawing.Point(109, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 18);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Matrícula";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.label1.Location = new System.Drawing.Point(125, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 18);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Usuário";
-            // 
-            // BTNconfirmarEdicao
-            // 
-            this.BTNconfirmarEdicao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.BTNconfirmarEdicao.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNconfirmarEdicao.BackgroundImage")));
-            this.BTNconfirmarEdicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BTNconfirmarEdicao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BTNconfirmarEdicao.FlatAppearance.BorderSize = 0;
-            this.BTNconfirmarEdicao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.BTNconfirmarEdicao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BTNconfirmarEdicao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.BTNconfirmarEdicao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNconfirmarEdicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.BTNconfirmarEdicao.ForeColor = System.Drawing.SystemColors.Info;
-            this.BTNconfirmarEdicao.Location = new System.Drawing.Point(122, 176);
-            this.BTNconfirmarEdicao.Name = "BTNconfirmarEdicao";
-            this.BTNconfirmarEdicao.Size = new System.Drawing.Size(168, 35);
-            this.BTNconfirmarEdicao.TabIndex = 24;
-            this.BTNconfirmarEdicao.Text = "Confirmar Edição";
-            this.BTNconfirmarEdicao.UseVisualStyleBackColor = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(122, 74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 120);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // FORMindividual
             // 
@@ -488,8 +364,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,7 +374,7 @@
 
         private System.Windows.Forms.Button BTNeditarUsuario;
         private System.Windows.Forms.Button BTNexcluirUsuario;
-        private System.Windows.Forms.Button BTNsairUsuario;
+        private System.Windows.Forms.Button BTNdesconectar;
         private System.Windows.Forms.Label tituloApresentacao;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtPesquisa;
@@ -516,15 +391,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblSenha;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button BTNconfirmarEdicao;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox TXTconfirmarsenhaEditar;
-        private System.Windows.Forms.TextBox TXTsenhaEditar;
-        private System.Windows.Forms.TextBox TXTmatriculaEditar;
-        private System.Windows.Forms.TextBox TXTusuarioEditar;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

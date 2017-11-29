@@ -50,8 +50,7 @@
             // 
             // PANELcadastrar
             // 
-            this.PANELcadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.PANELcadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PANELcadastrar.BackColor = System.Drawing.Color.Transparent;
             this.PANELcadastrar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -66,11 +65,10 @@
             this.PANELcadastrar.Controls.Add(this.lblAno);
             this.PANELcadastrar.Controls.Add(this.lblTurma);
             this.PANELcadastrar.Controls.Add(this.BTNcriarturma);
-            this.PANELcadastrar.Location = new System.Drawing.Point(268, 91);
+            this.PANELcadastrar.Location = new System.Drawing.Point(300, 120);
             this.PANELcadastrar.Name = "PANELcadastrar";
-            this.PANELcadastrar.Size = new System.Drawing.Size(604, 455);
+            this.PANELcadastrar.Size = new System.Drawing.Size(416, 350);
             this.PANELcadastrar.TabIndex = 6;
-            this.PANELcadastrar.Visible = false;
             // 
             // lblConfirmarSenhaTurma
             // 
@@ -78,7 +76,7 @@
             this.lblConfirmarSenhaTurma.AutoSize = true;
             this.lblConfirmarSenhaTurma.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
             this.lblConfirmarSenhaTurma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblConfirmarSenhaTurma.Location = new System.Drawing.Point(120, 208);
+            this.lblConfirmarSenhaTurma.Location = new System.Drawing.Point(68, 208);
             this.lblConfirmarSenhaTurma.Name = "lblConfirmarSenhaTurma";
             this.lblConfirmarSenhaTurma.Size = new System.Drawing.Size(149, 18);
             this.lblConfirmarSenhaTurma.TabIndex = 15;
@@ -88,7 +86,7 @@
             // 
             this.TXTconfirmarsenhaturma.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TXTconfirmarsenhaturma.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTconfirmarsenhaturma.Location = new System.Drawing.Point(275, 204);
+            this.TXTconfirmarsenhaturma.Location = new System.Drawing.Point(223, 204);
             this.TXTconfirmarsenhaturma.Name = "TXTconfirmarsenhaturma";
             this.TXTconfirmarsenhaturma.PasswordChar = '*';
             this.TXTconfirmarsenhaturma.Size = new System.Drawing.Size(170, 22);
@@ -96,12 +94,13 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.label5.Location = new System.Drawing.Point(252, 25);
+            this.label5.Location = new System.Drawing.Point(200, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(447, 73);
             this.label5.TabIndex = 13;
@@ -109,13 +108,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(89, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 108);
             this.pictureBox1.TabIndex = 12;
@@ -125,7 +124,7 @@
             // 
             this.TXTsenhaTurma.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TXTsenhaTurma.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTsenhaTurma.Location = new System.Drawing.Point(275, 176);
+            this.TXTsenhaTurma.Location = new System.Drawing.Point(223, 176);
             this.TXTsenhaTurma.Name = "TXTsenhaTurma";
             this.TXTsenhaTurma.PasswordChar = '*';
             this.TXTsenhaTurma.Size = new System.Drawing.Size(170, 22);
@@ -135,7 +134,7 @@
             // 
             this.TXTano.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TXTano.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTano.Location = new System.Drawing.Point(275, 146);
+            this.TXTano.Location = new System.Drawing.Point(223, 146);
             this.TXTano.Name = "TXTano";
             this.TXTano.Size = new System.Drawing.Size(118, 22);
             this.TXTano.TabIndex = 10;
@@ -144,7 +143,7 @@
             // 
             this.TXTturma.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TXTturma.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXTturma.Location = new System.Drawing.Point(275, 118);
+            this.TXTturma.Location = new System.Drawing.Point(223, 118);
             this.TXTturma.Name = "TXTturma";
             this.TXTturma.Size = new System.Drawing.Size(170, 22);
             this.TXTturma.TabIndex = 8;
@@ -155,7 +154,7 @@
             this.lblSenhaTurma.AutoSize = true;
             this.lblSenhaTurma.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
             this.lblSenhaTurma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblSenhaTurma.Location = new System.Drawing.Point(210, 177);
+            this.lblSenhaTurma.Location = new System.Drawing.Point(158, 177);
             this.lblSenhaTurma.Name = "lblSenhaTurma";
             this.lblSenhaTurma.Size = new System.Drawing.Size(59, 18);
             this.lblSenhaTurma.TabIndex = 7;
@@ -167,7 +166,7 @@
             this.lblAno.AutoSize = true;
             this.lblAno.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
             this.lblAno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblAno.Location = new System.Drawing.Point(179, 150);
+            this.lblAno.Location = new System.Drawing.Point(127, 150);
             this.lblAno.Name = "lblAno";
             this.lblAno.Size = new System.Drawing.Size(91, 18);
             this.lblAno.TabIndex = 6;
@@ -179,7 +178,7 @@
             this.lblTurma.AutoSize = true;
             this.lblTurma.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold);
             this.lblTurma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(68)))));
-            this.lblTurma.Location = new System.Drawing.Point(195, 122);
+            this.lblTurma.Location = new System.Drawing.Point(143, 122);
             this.lblTurma.Name = "lblTurma";
             this.lblTurma.Size = new System.Drawing.Size(65, 18);
             this.lblTurma.TabIndex = 4;
@@ -194,7 +193,7 @@
             this.BTNcriarturma.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNcriarturma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.BTNcriarturma.ForeColor = System.Drawing.SystemColors.Info;
-            this.BTNcriarturma.Location = new System.Drawing.Point(239, 291);
+            this.BTNcriarturma.Location = new System.Drawing.Point(187, 291);
             this.BTNcriarturma.Name = "BTNcriarturma";
             this.BTNcriarturma.Size = new System.Drawing.Size(127, 41);
             this.BTNcriarturma.TabIndex = 3;
@@ -233,8 +232,11 @@
             this.ClientSize = new System.Drawing.Size(1140, 637);
             this.Controls.Add(this.PANELcadastrar);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "FORMcriarCaderno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FORMcriarCaderno";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PANELcadastrar.ResumeLayout(false);
             this.PANELcadastrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
