@@ -55,6 +55,12 @@
     <Compile Include="FORMcriarCaderno.designer.cs">
       <DependentUpon>FORMcriarCaderno.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMeditarcaderno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMeditarcaderno.Designer.cs">
+      <DependentUpon>FORMeditarcaderno.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMindividual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FORMcriarCaderno.resx">
       <DependentUpon>FORMcriarCaderno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMeditarcaderno.resx">
+      <DependentUpon>FORMeditarcaderno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMindividual.resx">
       <DependentUpon>FORMindividual.cs</DependentUpon>
